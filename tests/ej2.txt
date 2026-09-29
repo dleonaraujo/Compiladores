@@ -1,0 +1,4 @@
+nota1 nota _promedio
+int integer intVariable boolean
+"abcd" texto ejemplo"
+13 15.66 12.3.4 nota int

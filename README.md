@@ -15,3 +15,18 @@ Entregas: en 3 fases
   - 15/09: Lectura + NUM_INT + NUM_DEC
   - 22/09: ID + TEXTO + palabras reservadas + tabla de símbolos
   - 29/09: operadores + Tokens completos + Integración + lista de tokens + errores + pruebas + presentación
+
+## Estructura del proyecto
+```
+src/     Código fuente (Main, Lexer, SymbolTable, Token)
+tests/   Archivos de entrada de prueba (.txt, .lp)
+docs/    Material del curso (enunciado, expresiones regulares)
+build/   Ejecutable generado (no se sube al repositorio)
+```
+
+## Compilar y ejecutar
+```
+g++ -g src/Main.cpp src/Lexer.cpp src/SymbolTable.cpp -o build/Main.exe
+build/Main.exe tests/prueba_semana2.lp
+```
+En VS Code: `Ctrl+Shift+B` ejecuta la tarea "Compilar LexLP".

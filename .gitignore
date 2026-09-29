@@ -8,3 +8,6 @@
 
 # Logs de build
 build.log
+
+# Carpeta de salida de compilación
+build/

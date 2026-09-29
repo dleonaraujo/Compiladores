@@ -1,0 +1,37 @@
+
+NUM_INT = D+                         NUM_INT    Numero entero
+NUM_DEC = D+\.D+                     NUM_DEC    Numero decimal
+ID = L(L|D)*                         ID         Identificador
+TEXTO = ".*"                         TEXTO      Constantes de texto
+INT = int                            INT        Palabra reservada
+FLOAT = float                        FLOAT      Palabra reservada
+CHAR = char                          CHAR       Palabra reservada
+BOOLEAN = boolean                    BOOLEAN    Palabra reservada
+VOID = void                          VOID       Palabra reservada
+IF = if                              IF         Palabra reservada
+ELSE = else                          ELSE       Palabra reservada
+FOR = for                            FOR        Palabra reservada
+WHILE = while                        WHILE      Palabra reservada
+SCANF = scanf                        SCANF      Palabra reservada
+PRINTLN = println                    PRINTLN    Palabra reservada
+MAIN = main                          MAIN       Palabra reservada
+RETURN = return                      RETURN     Palabra reservada
+COMENT = //.*\n                                 Comentario
+=                                    =          Operador de asignacion
++                                    +          Operador aritmetico
+-                                    -          Operador aritmetico
+*                                    *          Operador aritmetico
+/                                    /          Operador aritmetico
+%                                    %          Operador aritmetico
+&&                                   &&         Operador logico
+||                                   ||         Operador logico
+!                                    !          Operador logico
+COMP = > | >= | < | <= | != | ==     COMP       Operador de comparacion/relacionales
+(                                    (          Simbolo especial
+)                                    )          Simbolo especial
+[                                    [          Simbolo especial
+]                                    ]          Simbolo especial
+{                                    {          Simbolo especial
+}                                    }          Simbolo especial
+,                                    ,          Simbolo especial
+;                                    ;          Simbolo especial

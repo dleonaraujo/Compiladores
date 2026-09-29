@@ -27,6 +27,34 @@ enum TokenType {
     TOKEN_MAIN,
     TOKEN_RETURN,
 
+    // Operador de asignacion
+    TOKEN_ASIGN,
+
+    // Operadores aritmeticos
+    TOKEN_MAS,
+    TOKEN_MENOS,
+    TOKEN_POR,
+    TOKEN_DIV,
+    TOKEN_MOD,
+
+    // Operadores logicos
+    TOKEN_AND,
+    TOKEN_OR,
+    TOKEN_NOT,
+
+    // Operador de comparacion / relacional
+    TOKEN_COMP,
+
+    // Simbolos especiales
+    TOKEN_PAR_IZQ,
+    TOKEN_PAR_DER,
+    TOKEN_COR_IZQ,
+    TOKEN_COR_DER,
+    TOKEN_LLA_IZQ,
+    TOKEN_LLA_DER,
+    TOKEN_COMA,
+    TOKEN_PYCOMA,
+
     // Auxiliares
     TOKEN_DESCONOCIDO,
     TOKEN_EOF
@@ -58,7 +86,25 @@ struct Token {
             case TOKEN_PRINTLN:    return "PRINTLN";
             case TOKEN_MAIN:       return "MAIN";
             case TOKEN_RETURN:     return "RETURN";
-            case TOKEN_DESCONOCIDO:return "DESCONOCIDO";
+            case TOKEN_ASIGN:      return "ASIGN";
+            case TOKEN_MAS:        return "MAS";
+            case TOKEN_MENOS:      return "MENOS";
+            case TOKEN_POR:        return "POR";
+            case TOKEN_DIV:        return "DIV";
+            case TOKEN_MOD:        return "MOD";
+            case TOKEN_AND:        return "AND";
+            case TOKEN_OR:         return "OR";
+            case TOKEN_NOT:        return "NOT";
+            case TOKEN_COMP:       return "COMP";
+            case TOKEN_PAR_IZQ:    return "PAR_IZQ";
+            case TOKEN_PAR_DER:    return "PAR_DER";
+            case TOKEN_COR_IZQ:    return "COR_IZQ";
+            case TOKEN_COR_DER:    return "COR_DER";
+            case TOKEN_LLA_IZQ:    return "LLA_IZQ";
+            case TOKEN_LLA_DER:    return "LLA_DER";
+            case TOKEN_COMA:       return "COMA";
+            case TOKEN_PYCOMA:     return "PYCOMA";
+            case TOKEN_DESCONOCIDO:return "error    ";
             case TOKEN_EOF:        return "EOF";
             default:               return "UNKNOWN";
         }

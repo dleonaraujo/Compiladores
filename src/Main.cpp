@@ -6,6 +6,7 @@
 using namespace std;
 
 // =====================================================================
+// Verificado por Diego Leon
 // Main: punto de entrada del compilador LP.
 // Flujo (segun seccion 3.1 del PDF):
 //   archivo.lp -> Lexer -> tokens -> Parser -> aceptado / errores

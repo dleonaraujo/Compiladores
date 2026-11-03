@@ -26,6 +26,7 @@ enum TokenType {
     TOKEN_PRINTLN,
     TOKEN_MAIN,
     TOKEN_RETURN,
+    TOKEN_FUNC,     // Requerido por la gramatica LP (produccion FUNCION -> func id (...)) para el parser
 
     // Operador de asignacion
     TOKEN_ASIGN,
@@ -86,6 +87,7 @@ struct Token {
             case TOKEN_PRINTLN:    return "PRINTLN";
             case TOKEN_MAIN:       return "MAIN";
             case TOKEN_RETURN:     return "RETURN";
+            case TOKEN_FUNC:       return "FUNC";
             case TOKEN_ASIGN:      return "ASIGN";
             case TOKEN_MAS:        return "MAS";
             case TOKEN_MENOS:      return "MENOS";

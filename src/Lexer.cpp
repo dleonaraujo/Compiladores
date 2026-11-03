@@ -39,6 +39,10 @@ void Lexer::initKeywords() {
     keywords["println"] = TOKEN_PRINTLN;
     keywords["main"]    = TOKEN_MAIN;
     keywords["return"]  = TOKEN_RETURN;
+    // "func" se agrega como palabra reservada porque la gramatica LP la exige
+    // en la produccion FUNCION -> func id ( ARGUMENTOS ). Sin esta linea el
+    // parser veria "func" como un ID y no reconoceria las llamadas a funciones.
+    keywords["func"]    = TOKEN_FUNC;
 }
 
 bool Lexer::loadFile(const string& filepath) {

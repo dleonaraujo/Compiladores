@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(g++ -g src/Main.cpp src/Lexer.cpp src/SymbolTable.cpp -o src/Main.exe)",
+      "Bash(echo \"EXIT: $?\")",
+      "Read(//tmp/**)",
+      "Bash(/c/msys64/ucrt64/bin/g++.exe -g src/Main.cpp src/Lexer.cpp src/SymbolTable.cpp -o src/Main.exe)",
+      "Bash(echo \"exit=$?\")",
+      "Bash(/c/msys64/ucrt64/bin/g++.exe --version)",
+      "Bash(/c/msys64/ucrt64/bin/g++.exe -c src/Lexer.cpp -o /tmp/lexer.o)",
+      "PowerShell($ErrorActionPreference = 'Continue'; $out = & \"C:\\\\msys64\\\\ucrt64\\\\bin\\\\g++.exe\" -c \"D:\\\\01_Universidad\\\\2026_II\\\\Compiladores\\\\src\\\\Lexer.cpp\" -o \"D:\\\\01_Universidad\\\\2026_II\\\\Compiladores\\\\lexer.o\" 2>&1; Write-Output \"exit=$LASTEXITCODE\"; Write-Output $out)",
+      "PowerShell(cd \"D:\\\\01_Universidad\\\\2026_II\\\\Compiladores\"; & \"C:\\\\msys64\\\\ucrt64\\\\bin\\\\g++.exe\" -g src\\\\Main.cpp src\\\\Lexer.cpp src\\\\SymbolTable.cpp -o src\\\\Main.exe; Write-Output \"exit=$LASTEXITCODE\"; Get-Item src\\\\Main.exe | Select-Object Name, LastWriteTime, Length)",
+      "Bash(./src/Main.exe)",
+      "PowerShell(Remove-Item *)",
+      "PowerShell(cd \"D:\\\\01_Universidad\\\\2026_II\\\\Compiladores\"; & \"C:\\\\msys64\\\\ucrt64\\\\bin\\\\g++.exe\" -g src\\\\Main.cpp src\\\\Lexer.cpp src\\\\SymbolTable.cpp src\\\\Parser.cpp -o src\\\\Main.exe; Write-Output \"exit=$LASTEXITCODE\" , es la unica forma de hacer el codigo ?)",
+      "Bash(printf 'void main\\(\\) {\\\\n    int edad;\\\\n    float promedio;\\\\n    edad = 20;\\\\n    promedio = 15.5;\\\\n}\\\\n')",
+      "Bash(./src/Main.exe tests/valido1.lp)",
+      "Bash(printf 'void main\\(\\) {\\\\n    int edad\\\\n    edad = 20;\\\\n}\\\\n')",
+      "Bash(./src/Main.exe tests/invalido1.lp)",
+      "Bash(./src/Main.exe tests/valido2.lp)",
+      "PowerShell(cd \"D:\\\\01_Universidad\\\\2026_II\\\\Compiladores\"; & \"C:\\\\msys64\\\\ucrt64\\\\bin\\\\g++.exe\" -fdiagnostics-color=always -g src\\\\Main.cpp src\\\\Lexer.cpp src\\\\SymbolTable.cpp src\\\\Parser.cpp -o build\\\\Main.exe; Write-Output \"exit=$LASTEXITCODE\"; Get-Item build\\\\Main.exe | Select-Object Name, Length, LastWriteTime)",
+      "Bash(./build/Main.exe tests/valido1.lp)",
+      "Bash(./build/Main.exe tests/valido1.lp --tokens)",
+      "Bash(python scripts/generar_guia.py)"
+    ]
+  }
+}

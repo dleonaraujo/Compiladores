@@ -25,6 +25,9 @@ public:
     Lexer();
     bool loadFile(const std::string& filepath);
     void setSource(const std::string& input);
+    // getNextToken es la interfaz que consume el Parser: cada llamada
+    // devuelve el siguiente token de la entrada (incluido TOKEN_EOF al final).
+    // El Parser no debe tocar 'source' ni 'cursor': solo pide tokens de a uno.
     Token getNextToken();
     const SymbolTable& getSymbolTable() const;
 };
